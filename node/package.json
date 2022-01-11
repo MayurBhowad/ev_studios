@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src",
+    "start": "node src"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/MayurBhowad/ev_studios/issues"
   },
-  "homepage": "https://github.com/MayurBhowad/ev_studios#readme"
+  "homepage": "https://github.com/MayurBhowad/ev_studios#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "validator": "^13.7.0"
+  }
 }
