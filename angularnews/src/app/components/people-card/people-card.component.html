@@ -2,22 +2,22 @@
     <div class="profile">
         <img src={{news_data.images.main}} alt="">
         <div class="profile-sub">
-            <p>{{news_data.occupation}}</p>
-            <p class="age">age: {{news_data.age}}</p>
+            <p>{{news_data.occupation || 'NA'}}</p>
+            <p class="age">age: {{news_data.age || 'NA'}}</p>
         </div>
     </div>
     <div class="details">
         <div class="header">
-            <h4>{{news_data.homePlanet}}</h4>
-            <h4>{{news_data.species}}</h4>
+            <h4>{{news_data.homePlanet || 'Unknown'}}</h4>
+            <h4>{{news_data.species || 'Unknown'}}</h4>
         </div>
         <div class="name">
             <h2>{{news_data.name.first}} {{news_data.name.last}}</h2>
             <h2>{{news_data.gender === "Male" ? "M" : "F"}}</h2>
         </div>
         <div class="description">
-            <p>Shut up and take my money! I'm walking on sunshine, woah oh oooh This is how we do it. Pick your nose and
-                chew it wow! I never would have thought of that.</p>
+            <p style="display: inline;">
+                {{news_data.sayings[0]}}{{news_data.sayings[1]}}</p>
         </div>
         <div class="action">
             <button class="read-more-btn" routerLink="/{{news_data.id}}">Read</button>

@@ -10,7 +10,7 @@
 
 .profile {
   position: relative;
-  width: 500px;
+  // width: 500px;
   border: 1px solid black;
   border-radius: 5px;
 
@@ -42,6 +42,8 @@
 }
 
 .details {
+  width: 100%;
+  position: relative;
   padding-left: 1rem;
 
   .header {
@@ -66,11 +68,15 @@
 
   .description {
     p {
+      word-break: break-all;
       color: rgb(107, 105, 105);
     }
   }
 
   .action {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     .read-more-btn {
       margin-top: 2px;
       padding: 0.5rem 2rem;
