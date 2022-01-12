@@ -4,37 +4,32 @@
 <div class="news-detail">
     <div class="heading">
         <div class="profile">
-            <img src={{user.images.main}} alt="">
+            <img src={{user?.images.main}} alt="">
         </div>
         <div class="user-details">
             <div class="header">
-                <h4>HomePlanet: {{user.homePlanet || 'unknown'}}</h4>
-                <h4>Species: {{user.species || 'unknown'}}</h4>
+                <h4>HomePlanet: {{user?.homePlanet || 'unknown'}}</h4>
+                <h4>Species: {{user?.species || 'unknown'}}</h4>
             </div>
             <div class="name">
                 <div>
                     <p>Name:</p>
-                    <h2>{{user.name.first}} {{user.name.middle}} {{user.name.last}}</h2>
+                    <h2>{{user?.name.first}} {{user?.name.middle}} {{user?.name.last}}</h2>
                 </div>
                 <div>
                     <p>Gender:</p>
-                    <h2>{{user.gender || 'unknown'}}</h2>
+                    <h2>{{user?.gender || 'unknown'}}</h2>
                 </div>
             </div>
             <div class="occupation">
-                <p>{{user.occupation || 'unknown'}}</p>
-                <p>age: {{user.age || 'unknown'}}</p>
+                <p>{{user?.occupation || 'unknown'}}</p>
+                <p>age: {{user?.age || 'unknown'}}</p>
             </div>
         </div>
     </div>
     <div class="saying">
         <h3>Says...</h3>
-        <p class="saying-para" *ngFor="let text of user.sayings">{{text}}
-            <!-- I'm walking on sunshine, woah oh oooh
-            This is how we do it. Pick your nose and chew it
-            wow! I never would have thought of that.
-            Bigfoot! He's real! I knew it! The Loch Ness Monster's book was right!
-            I didn't ask for a completely reasonable excuse! I asked you to get busy! -->
+        <p class="saying-para" *ngFor="let text of user?.sayings">{{text}}
         </p>
     </div>
 </div>
