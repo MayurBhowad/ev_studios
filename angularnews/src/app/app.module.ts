@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PeopleCardComponent } from './components/people-card/people-card.component';
 import { HomeComponent } from './components/home/home.component';
+import { NewsDetailComponent } from './components/news-detail/news-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, PeopleCardComponent, HomeComponent],
+  declarations: [AppComponent, PeopleCardComponent, HomeComponent, NewsDetailComponent],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

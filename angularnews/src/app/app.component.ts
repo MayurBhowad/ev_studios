@@ -8,13 +8,7 @@ import { NewsapiService } from './services/newsapi.service';
 })
 export class AppComponent {
   title = 'title';
-  news: any;
-  constructor(private newsApiService: NewsapiService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.newsApiService.getAllNews().subscribe((data) => {
-      console.log(data);
-      this.news = data;
-    });
-  }
+  ngOnInit() {}
 }

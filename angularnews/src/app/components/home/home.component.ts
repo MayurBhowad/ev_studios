@@ -7,12 +7,11 @@ import { NewsapiService } from 'src/app/services/newsapi.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  news: any;
+  news: any = [];
   constructor(private newsApiService: NewsapiService) {}
 
   ngOnInit() {
     this.newsApiService.getAllNews().subscribe((data) => {
-      console.log(data);
       this.news = data;
     });
   }
